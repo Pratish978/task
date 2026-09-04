@@ -1,6 +1,7 @@
 ﻿// src/app/layout.tsx
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
+import Chatbot from "@/components/CareAssistant";
 import "./globals.css";
 
 const jakarta = Plus_Jakarta_Sans({
@@ -26,6 +27,7 @@ export default function RootLayout({
         className="bg-[#FAF9F6] text-stone-900 min-h-screen flex flex-col selection:bg-stone-900 selection:text-white"
       >
         {children}
+        <Chatbot />
       </body>
     </html>
   );
